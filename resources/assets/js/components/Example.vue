@@ -17,7 +17,7 @@
 <script>
     export default {
         ready() {
-            console.log('Component ready.')
+            console.log('Component "example" is ready.')
         }
     }
 </script>

@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController@index');
+
+Route::get('links/{link}', 'LinksController@view');
+
+Route::get('vue-example', function () {
+    return view('vue-example');
 });

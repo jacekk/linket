@@ -1,6 +1,7 @@
 /node_modules
 /public/storage
 /public/js
+/public/build
 /public/css
 /vendor
 /.idea
@@ -8,3 +9,4 @@
 Homestead.json
 Homestead.yaml
 .env
+npm-debug.log

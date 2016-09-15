@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "jacekk/linket",
+    "description": "Linket - bucket for links",
+    "keywords": ["linket", "links", "bucket"],
     "license": "MIT",
     "type": "project",
     "require": {
