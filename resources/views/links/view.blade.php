@@ -25,8 +25,8 @@
                     <td>{{ $link->author or '-' }}</td>
                 </tr>
                 <tr>
-                    <th>Created at</th>
-                    <td>{{ $link->created_at }}</td>
+                    <th>Created</th>
+                    <td>{{ $link->created }}</td>
                 </tr>
                 <tr>
                     <th>Description</th>

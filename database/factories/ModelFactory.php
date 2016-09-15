@@ -21,3 +21,14 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Link::class, function (Faker\Generator $faker) {
+    return [
+        'url' => $faker->url,
+        'title' => substr($faker->sentence, 0, -1),
+        'author' => $faker->name,
+        'created' => $faker->dateTimeThisMonth,
+        'description' => $faker->sentences(3, true),
+        'content' => implode(PHP_EOL, $faker->paragraphs(10)),
+    ];
+});

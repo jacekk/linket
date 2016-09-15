@@ -18,9 +18,11 @@ class CreateLinksTable extends Migration
             $table->string('url');
             $table->string('title');
             $table->string('author')->nullable();
+            $table->date('created')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->text('description')->nullable();
             $table->longText('content')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
