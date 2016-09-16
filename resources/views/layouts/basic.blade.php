@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        {!! Feed::link(url('feed'), 'atom', config('app.name')) !!}
         <title>
             @hasSection('title')
                 @yield('title') | Linket

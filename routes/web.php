@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('feed', 'HomeController@feed');
 
 Route::get('links/{link}', 'LinksController@view');
 
