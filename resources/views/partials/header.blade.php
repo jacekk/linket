@@ -12,12 +12,11 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <!-- <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-            </ul>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="/links/create">Add link</a></li>
+            </ul>
+            <!-- <ul class="nav navbar-nav">
                 <li><a href="#">Link 3</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -28,8 +27,8 @@
                         <li><a href="#">Separated link</a></li>
                     </ul>
                 </li>
-            </ul>
-        </div> -->
+            </ul> -->
+        </div>
         <!-- /.navbar-collapse -->
     </div>
 </nav>

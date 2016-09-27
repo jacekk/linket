@@ -14,6 +14,10 @@
 Route::get('/', 'HomeController@index');
 Route::get('feed', 'HomeController@feed');
 
+Route::get('links/create', 'LinksController@create');
+Route::get('links/{link}/remove', 'LinksController@remove');
+Route::delete('links/{link}/remove', 'LinksController@delete');
+Route::post('links/new', 'LinksController@storeNew');
 Route::get('links/{link}', 'LinksController@view');
 
 Route::get('vue-example', function () {

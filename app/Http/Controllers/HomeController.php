@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function index()
     {
         return view('home.index', [
-            'links' => Link::all(),
+            'links' => Link::all()->sortByDesc('created'),
         ]);
     }
 
@@ -48,18 +48,18 @@ class HomeController extends Controller
 
     protected function rebuildFeedItems(Feed & $feed)
     {
-        $posts = \DB::table('links')
+        $links = \DB::table('links')
             ->orderBy('created', 'desc')
             ->limit(20)
             ->get();
 
-        foreach ($posts as $post) {
+        foreach ($links as $link) {
             $feed->add(
-                $post->title,
-                $post->author,
-                $post->url,
-                $post->created,
-                $post->description
+                $link->title,
+                $link->author,
+                $link->url,
+                $link->created,
+                $link->description
             );
         }
     }

@@ -5,7 +5,7 @@
 @stop
 
 @section('content')
-    <div class="col-xs-6 col-xs-offset-3">
+    <div class="col-xs-6">
         <table class="table table-bordered">
             <tbody>
                 <tr>
@@ -38,5 +38,8 @@
                 </tr>
             </tbody>
         </table>
+        <div class="btn-group">
+            <a href="{{ $link->getRemoveUrl() }}" class="btn btn-default">Remove this link</a>
+        </div>
     </div>
 @stop
